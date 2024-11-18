@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    max-width: 100% !important;
+    transition: 100ms;
+}
+body{
+    overflow-x: hidden !important;
 }
 a{
     text-decoration: none;
@@ -32,61 +37,44 @@ a{
     src: url('/public/fonts/Sacramento-Regular.ttf');
 }
 html{
-    max-width: 100vw;
+    max-width: 100%;
     min-height: 100vh;
     background-color: #EFE9E2;
-
 }
 h2{
+    padding: 10px 0;
+    overflow-y: hidden;
     font-family: 'Secramento';
-    font-size: 70px;
-    font-weight: 400;
+    font-size: 70px !important;
+    font-weight: 400 !important;
     color: #322016;
 }
+.ham{
+    cursor: pointer;
+}
 header{
-    background-color: white;
-    padding-top: 30px;
-    max-width: 100vw;
-    font-family: 'DosisExtraBold';
-    letter-spacing: 2px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+    
 }
 .containerPrinc{
     width: 100%;
 }
 .containerLogo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 36%;
-    margin: 10px 0;
+    
 }
 
 .containerLogo > img{
     height: 80px;
 }
 .containerIcons{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 50%;
-    gap: 35px;
-    padding-right: 7rem;
+    
 }
 .icon>img{
     height: 23px;
 }
-nav{
-    height: 50%;
-    display: flex;
-    align-items: end;
-    justify-content: space-around;
-    width: 100%;
+.comput{
+    
 }
-nav>div{
+.comput>div{
     background-color: #332016;
     padding: 15px;
     width: 100%;
@@ -151,5 +139,37 @@ nav>div>a{
 }
 .button_one{
     width: 185px; padding:11px 0;
-border-top-left-radius: 14px; border-bottom-right-radius: 14px; text-align: center;
+    border-top-left-radius: 14px; border-bottom-right-radius: 14px; text-align: center;
+}
+.descNav{
+    right: -800px;
+}
+@media (max-width: 500px) {
+    nav>div>a{
+        color: black;
+    }
+    .activate{
+        color: #E1603B;
+    }
+    h2{
+        font-size: 45px !important;
+    }
+    .Banner{
+        height: 120vh;
+    }
+    .Banner_containerText{
+        width: 70%;
+        font-size: 16px;
+        gap:50px;
+    }
+    .main_title{
+        width: 293px;
+        margin-top: 90px;
+    }
+    .fontoDegrad{
+        background: linear-gradient(to bottom, #32201673, #FED68826);
+    }
+    .ham{
+        height: 50px;
+    }
 }

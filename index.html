@@ -7,14 +7,15 @@
     </title>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-        <header>
-            <div class="containerLogo">
+        <header class="relative bg-white lg:pt-[30px] max-w-screen font-[DosisExtraBold] flex lg:justify-between justify-around items-center">
+            <div class="containerLogo flex justify-center items-center h-full lg:w-[36%] my-[10px]">
                 <img class="logo" src="/public/logos/LOGO_NARANJA.png" alt="logo naranja JB">
             </div>
-            <div class="containerPrinc">
-                <div class="containerIcons">
+            <div class="hidden md:block lg:w-full">
+                <div class="containerIcons flex lg:justify-end items-center h-full gap-[35px] lg:pr-28 lg:mb-[20px]">
                     <a class="icon" href="/">
                         <img src="/public/icons/Icono_facebook.png" alt="icon facebook">
                     </a><a class="icon" href="/">
@@ -23,8 +24,20 @@
                         <img src="/public/icons/Icono_tiktok.png" alt="icon tiktok">
                     </a>
                 </div>
-                <nav>
+                <nav class="comput hidden h-1/2 lg:flex items-end justify-around w-full">
                     <div>
+                        <a class="activate" href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
+                    </div>
+                </nav>
+            </div>
+            <div>
+                <img class="ham lg:hidden mb-[10px]" src="/public/icons/ham.png" alt="icon de menu">
+                <nav class="navMobile descNav lg:hidden absolute w-[70%] top-0 right-0 py-24 flex justify-center items-center flex-col z-50 bg-[#EFE9E2] rounded-tl-[30px] rounded-bl-[30px]">
+                    <div class="absolute top-[19px] w-full flex justify-between px-10">
+                        <img class="containerLogo w-[48.67px]" src="/public/logos/LOGO_NARANJA.png" alt="logo naranja">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="34"  height="34"  viewBox="0 0 24 24"  fill="none" stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                    </div>
+                    <div class="flex justify-center items-center gap-[30px] flex-col" >
                         <a class="activate" href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
                     </div>
                 </nav>
@@ -34,16 +47,16 @@
         <div class="Banner">
             <div class="fontoDegrad"></div>
             <div class="Banner_containerText" style="position: relative;">
-                <img src="/public/title.png" alt="titulo">
+                <img class="main_title" src="/public/title.png" alt="titulo">
                 <span style="text-align: center;">Descubre un espacio dedicado a realzar tu belleza y bienestar. Ofrecemos una amplia gama de servicios, desde cortes y peinados hasta tratamientos faciales</span>
-                <div style="display: flex; justify-content: space-around; align-items: center; width: 90%; margin-top: 20px;">
+                <div class="banner_buttons flex justify-around items-center flex-col gap-[20px] lg:w-[90%] mt-[20px]">
                     <a class="button_one reserva_banner" href="/Contactos.html">RESERVA TU CITA</a>
-                    <a class="button_one" style="border:2px solid #FED688; color: #FED688;" href="/Contactos.html">CONOCENOS</a>
+                    <a class="button_one" style="border:2px solid #FED688; color: #FED688; font-weight: 900;" href="/Contactos.html">CONOCENOS</a>
                 </div>
             </div>
         </div>
-        <div class="service">
-            <div class="service_conteiner_sections">
+        <div class="service transform -translate-y-[20vh] p-[50px] pt-[40vh] flex flex-col-reverse flex-col lg:grid lg:grid-cols-2 lg:place-items-center gap-[40px] lg:gap-[20px] bg-white rounded-bl-[150px]">
+            <div class="service_conteiner_sections md:grid mt-[50px] md:grid-cols-2 md:grid-rows-2 gap-[70px] md:gap-[50px] flex flex-wrap justify-center items-center">
                 <div class="service_section">
                     <img src="/public/icons/corazon.png" alt="icon de corazon" class="heart">
                     <img class="service_icon" src="/public/icons/Icono2.png" alt="icon peluqueria">
@@ -78,9 +91,10 @@
                 <p>
                     Ofrecemos una amplia gama de servicios: cortes, peinados, manicura, tratamientos faciales y mucho más. Nuestro equipo está listo para brindarte atención personalizada y ayudarte a lucir y sentirte increíble. ¡Ven y descubre el lugar perfecto para consentirte y resaltar tu belleza!
                 </p>
-                <a class="button_one" href="/Contactos.html" style="background-color: #322016; font-family: 'DosisMedium'; font-weight: 800;">RESERVA AHORA</a>
+                <a class="button_one" href="/Contactos.html" style="background-color: #322016; font-family: 'DosisMedium'; font-weight: 800; color: white;">RESERVA AHORA</a>
             </div>
         </div>
     </main>
+    <script src="/scripts/app.js"></script>
 </body>
 </html>

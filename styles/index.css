@@ -1,13 +1,5 @@
 .service{
-    transform: translateY(-20vh);
-    padding: 50px;
-    padding-top: 40vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    gap: 20px;
-    background-color: white;
-    border-bottom-left-radius:150px;
+    
 }
 .service_conteiner_text{
     display: flex;
@@ -22,10 +14,7 @@
     width: 70%;
 }
 .service_conteiner_sections{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row: 1fr 1fr;
-    gap:50px
+    
 }
 .service_title{
     text-align: center;
@@ -69,4 +58,14 @@
 .service_icon{
     width: 80px;
     height: 87px;
+}
+@media (max-width: 500px) {
+    h2{
+        font-size: 45px !important;
+    }
+    .service_conteiner_text p{
+        width: 90%;
+        margin: auto;
+        text-align: justify;
+    }
 }
