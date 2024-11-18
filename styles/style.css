@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     max-width: 100% !important;
-    transition: 100ms;
+    transition: 300ms;
 }
 body{
     overflow-x: hidden !important;

@@ -1,10 +1,8 @@
-const ham = document.querySelector('.Banner')
+const ham = document.querySelectorAll('.ham')
 const navMobile = document.querySelector('.navMobile')
-ham.addEventListener('click', () => {
-    if (navMobile.classList.toggle('descNav')) {
-        navMobile.classList.remove('descNav')
-    }
-    else {
-        navMobile.classList.add('descNav')
-    }
+
+ham.forEach(item => {
+    item.addEventListener('click', () => {
+        navMobile.classList.toggle('descNav')
+    })
 })
