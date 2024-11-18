@@ -142,7 +142,7 @@ nav>div>a{
     border-top-left-radius: 14px; border-bottom-right-radius: 14px; text-align: center;
 }
 .descNav{
-    right: -1000px;
+    transform:translateX(400px);
 }
 @media (max-width: 500px) {
     nav>div>a{
