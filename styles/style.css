@@ -142,7 +142,31 @@ nav>div>a{
     border-top-left-radius: 14px; border-bottom-right-radius: 14px; text-align: center;
 }
 .descNav{
-    transform:translateX(400px);
+    transform:translateX(700px);
+}
+.footercel {
+    background-color: #3E2723;
+    padding: 20px;
+    text-align: center;
+    color: white !important;
+}
+.footercel p, .footercel ul, .footercel li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footercel .contact-info p {
+    margin-bottom: 10px;
+}
+.footercel .info ul, .footercel .services ul {
+    padding-left: 0;
+}
+.footercel .info ul li, .footercel .services ul li {
+    margin-bottom: 5px;
+}
+.footercel .copyright {
+    font-size: 0.875rem;
+    margin-top: 20px;
 }
 @media (max-width: 500px) {
     nav>div>a{
