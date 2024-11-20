@@ -1,5 +1,10 @@
 .service{
-    
+    display: flex; 
+    flex-direction: column; 
+    flex-direction: column-reverse; 
+    background-color: #ffffff; 
+    padding: 50px;
+    padding-top: 40vh;
 }
 .service_conteiner_text{
     display: flex;
@@ -14,7 +19,11 @@
     width: 70%;
 }
 .service_conteiner_sections{
-    
+    display: flex; 
+flex-wrap: wrap; 
+justify-content: center; 
+align-items: center; 
+margin-top: 50px;
 }
 .service_title{
     text-align: center;
@@ -53,6 +62,19 @@
 .service_section2:hover{
     background-color: #E1603B;
 }
+.service2{
+    display: flex; 
+flex-direction: column; 
+background-color: #ffffff; 
+padding: 50px;
+}
+.containerSecond{
+    display: flex; 
+padding: 4rem; 
+flex-direction: column; 
+justify-content: center; 
+align-items: center; 
+}
 .heart{
     position: absolute;
     right: -30px;
@@ -61,6 +83,28 @@
 .service_icon{
     width: 80px;
     height: 87px;
+}
+.textContainerCard{
+    display: grid ;
+    place-items: center; 
+
+}
+.sectionGallery{
+    display: flex; 
+flex-direction: column; 
+}
+.sectionGallery_text{
+    display: flex; 
+flex-direction: column; 
+gap: 4rem; 
+justify-content: center; 
+align-items: center; 
+width: 90%;
+}
+.sectionGallery_images{
+    display: grid;
+place-items: center; 
+    gap: 1.2rem;
 }
 .form-container {
     background-color: white;
@@ -100,13 +144,41 @@ input::placeholder,textarea::placeholder{
     border-radius: 30px; 
     padding: 10px;
   }
-@media (max-width: 500px) {
-    h2{
-        font-size: 45px !important;
+
+  @media (min-width: 768px) { 
+    .service_conteiner_sections{
+        display: grid ;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); 
+  grid-template-rows: repeat(2, minmax(0, 1fr)); 
     }
-    .service_conteiner_text p{
-        width: 90%;
-        margin: auto;
-        text-align: justify;
+    .sectionGallery_images{
+        grid-template-columns: repeat(2, minmax(0, 1fr)); 
+grid-template-rows: repeat(2, minmax(0, 1fr)); 
     }
-}
+   }
+   @media (min-width: 768px) { 
+    .sectionGallery{
+        flex-direction: row; 
+    }
+   }
+  
+  
+  @media (min-width: 1024px) { 
+    .service{
+        display: grid ;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); 
+  place-items: center; 
+    }
+    .containerSecond{
+        flex-direction: row; 
+    }
+    .textContainerCard{
+        gap: 8rem; 
+    }    
+    .service2{
+        display: grid; 
+grid-template-columns: repeat(2, minmax(0, 1fr)); 
+place-items: center; 
+    }
+   }
+
