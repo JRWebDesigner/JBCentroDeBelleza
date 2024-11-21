@@ -1,17 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    max-width: 100% !important;
-    transition: 300ms;
-}
-body{
-    overflow-x: hidden !important;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
 @font-face {
     font-family: 'DosisMedium';
     src: url('/public/fonts/Dosis-Medium.ttf');
@@ -35,6 +21,21 @@ a{
 @font-face {
     font-family: 'Secramento';
     src: url('/public/fonts/Sacramento-Regular.ttf');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 'DosisMedium';
+    max-width: 100% !important;
+    transition: 300ms;
+}
+body{
+    overflow-x: hidden !important;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 html{
     max-width: 100%;
@@ -64,11 +65,10 @@ header{
 }
 .containerLogo{
     display: flex; 
-justify-content: center; 
-align-items: center; 
-height: 100%; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
 }
-
 .containerLogo > img{
     height: 80px;
 }
@@ -203,7 +203,7 @@ nav>div>a{
     transform:translateX(700px);
 }
 .footercel {
-    background-color: #3E2723;
+    background-color: #322016;
     padding: 20px;
     text-align: center;
     color: white !important;
@@ -225,6 +225,15 @@ nav>div>a{
 .footercel .copyright {
     font-size: 0.875rem;
     margin-top: 20px;
+}
+.footericons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footerCompu{
+    display: none; 
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
 }
 @media (max-width: 500px) {
     nav>div>a{
@@ -289,5 +298,11 @@ nav>div>a{
     }
     .banner_buttons{
         width: 90%;
+    }
+    .footercel{
+        display: none;
+    }
+    .footerCompu{
+        display: grid;
     }
 }
