@@ -14,8 +14,8 @@
             <div class="containerLogo">
                 <img class="logo" src="/public/logos/LOGO_NARANJA.png" alt="logo naranja JB">
             </div>
-            <div class="containerIcons celHidden md:block lg:w-full">
-                <div class="containerIcons_icons">
+            <div class="navTC">
+                <div class="navTC_icons">
                     <a class="icon" href="/">
                         <img src="/public/icons/Icono_facebook.png" alt="icon facebook">
                     </a><a class="icon" href="/">
@@ -24,21 +24,21 @@
                         <img src="/public/icons/Icono_tiktok.png" alt="icon tiktok">
                     </a>
                 </div>
-                <nav class="comput">
+                <nav class="navTC_links">
                     <div>
                         <a class="activate" href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
                     </div>
                 </nav>
             </div>
             <div>
-                <img class="ham lg:hidden mb-[10px]" src="/public/icons/ham.png" alt="icon de menu">
-                <nav class="navMobile descNav lg:hidden absolute w-[70%] top-0 right-0 py-24 flex justify-center items-center flex-col z-50 bg-[#EFE9E2] rounded-tl-[30px] rounded-bl-[30px]">
-                    <div class="absolute top-[19px] w-full flex justify-between px-10">
-                        <img class="containerLogo w-[48.67px]" src="/public/logos/LOGO_NARANJA.png" alt="logo naranja">
+                <img class="ham menu" src="/public/icons/ham.png" alt="icon de menu">
+                <nav class="navMobile descNav">
+                    <div class="navMobile_header">
+                        <img class="containerLogo" style="width:48.67px;" src="/public/logos/LOGO_NARANJA.png" alt="logo naranja">
                         <svg class="ham" xmlns="http://www.w3.org/2000/svg"  width="34"  height="34"  viewBox="0 0 24 24"  fill="none" stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
                     </div>
-                    <div class="modalMobile">
-                        <a class="activate" href="/">INICIO</a><a style="color: black;" href="/Conocenos.html">CONÓCENOS</a><a style="color: black;" href="/Servicio.html">SERVICIOS</a><a style="color: black;" href="/Tienda.html">TIENDA</a><a style="color: black;" href="/Galeria.html">GALERIA</a><a style="color: black;" href="/Contactos.html">CONTACTOS</a><a style="color: black;" href="/Blog.html">BLOG</a>
+                    <div class="navMobile_links" >
+                        <a class="activate" href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
                     </div>
                 </nav>
             </div>
@@ -55,8 +55,8 @@
                 </div>
             </div>
         </div>
-        <div class="service">
-            <div class="service_conteiner_sections">
+        <div class="service transform -translate-y-[20vh] p-[50px] pt-[40vh] flex flex-col-reverse  flex-col lg:grid lg:grid-cols-2 lg:place-items-center gap-[40px] lg:gap-[20px] bg-white rounded-bl-[150px]">
+            <div class="service_conteiner_sections md:grid mt-[50px] md:grid-cols-2 md:grid-rows-2 gap-[70px] md:gap-[50px] flex flex-wrap justify-center items-center">
                 <div class="service_section service_section1">
                     <img src="/public/icons/corazon.png" alt="icon de corazon" class="heart">
                     <img class="service_icon" src="/public/icons/Icono2.png" alt="icon peluqueria">
@@ -94,14 +94,14 @@
                 <a class="button_one" href="/Contactos.html" style="background-color: #322016; font-family: 'DosisMedium'; font-weight: 800; color: white;">RESERVA AHORA</a>
             </div>
         </div>
-        <div class="containerSecond" style="background: linear-gradient(to top, #322016 70%, transparent 40%); min-width: 425px; width: 90%; margin: auto; border-bottom-left-radius: 100px;">
-            <img class="compuHidden" src="/public/icons/Embellece.svg" alt="">
-            <div class="celHidden compuBlock" style="width: 50%; margin: auto; padding: 20px;">
+        <div class="containerSecond flex flex-col lg:flex-row justify-center items-center p-16" style="background: linear-gradient(to top, #322016 70%, transparent 40%); min-width: 425px; width: 90%; margin: auto; border-bottom-left-radius: 100px;">
+            <img class="lg:hidden" src="/public/icons/Embellece.svg" alt="">
+            <div class="hidden lg:block" style="width: 50%; margin: auto; padding: 20px;">
                 <img style="width: 500px; height: 550px; border-top-right-radius: 100px; object-fit: cover; object-position:top;" src="/public/img/img1.jpg" alt="">
             </div>
-            <img class="compuHidden" style="width: 500px; height: 550px; border-top-right-radius: 100px; object-fit: cover; object-position:top; margin: 20px 0;" src="/public/img/img1.jpg" alt="">
+            <img class="lg:hidden" style="width: 500px; height: 550px; border-top-right-radius: 100px; object-fit: cover; object-position:top; margin: 20px 0;" src="/public/img/img1.jpg" alt="">
             <div class="flex flex-col justify-center items-center gap-32" >
-                <div class="celHidden compuBlock" style="line-height:75px;">
+                <div class="hidden lg:block" style="line-height:75px;">
                         <img src="/public/icons/Embellece.svg" alt="">
                 </div>
                 <div class="grid place-items-center lg:gap-32" style="color: white; font-family: 'DosisMedium'; font-size: 16px; line-height: 27px;">
@@ -112,17 +112,17 @@
                 </div>
             </div>
         </div>
-        <div class="containerSecond" style="background: linear-gradient(to top, #322016 70%, transparent 40%); min-width: 425px; width: 90%; margin: auto; border-bottom-left-radius: 100px;">
-            <img class="compuHidden" src="/public/icons/toquefinal.svg" alt="">
-            <div class="celHidden compuBlock" style="width: 50%; margin: auto; padding: 20px;">
+        <div class="containerSecond flex flex-col lg:flex-row justify-center items-center p-16" style="background: linear-gradient(to top, #322016 70%, transparent 40%); min-width: 425px; width: 90%; margin: auto; border-bottom-left-radius: 100px;">
+            <img class="lg:hidden" src="/public/icons/toquefinal.svg" alt="">
+            <div class="hidden lg:block" style="width: 50%; margin: auto; padding: 20px;">
                 <img style="width: 500px; height: 550px; border-top-right-radius: 100px; object-fit: cover; object-position:top;" src="/public/img/img2.jpeg" alt="">
             </div>
-            <img class="compuHidden" style="width: 500px; height: 550px; border-top-right-radius: 100px; object-fit: cover; object-position:top; margin: 20px 0;" src="/public/img/img2.jpeg" alt="">
+            <img class="lg:hidden" style="width: 500px; height: 550px; border-top-right-radius: 100px; object-fit: cover; object-position:top; margin: 20px 0;" src="/public/img/img2.jpeg" alt="">
             <div class="flex flex-col justify-center items-center gap-32" >
-                <div class="celHidden compuBlock" style="line-height:75px;">
+                <div class="hidden lg:block" style="line-height:75px;">
                         <img src="/public/icons/toquefinal.svg" alt="">
                 </div>
-                <div class="textContainerCard" style="color: white; font-family: 'DosisMedium'; font-size: 16px; line-height: 27px;">
+                <div class="grid place-items-center lg:gap-32" style="color: white; font-family: 'DosisMedium'; font-size: 16px; line-height: 27px;">
                     <div style="min-width:300px; width: 50%; margin: auto; text-align: center;">
                         ¡Consigue el labial perfecto y luce unos labios irresistibles! Esta semana, lleva tu labial Cyzone favorito con un 10% de descuento en nuestra tienda. Elige entre una variedad de colores vibrantes y de larga duración para darle un toque espectacular a tu look. ¡No te quedes sin el tuyo...
                     </div>
@@ -131,7 +131,7 @@
             </div>
         </div>
         <div style="background-color: white; border-top-right-radius: 100px;">
-            <div class="service2">
+            <div class="service2 p-[50px] flex flex-col lg:grid lg:grid-cols-2 lg:place-items-center gap-[40px] lg:gap-[20px] bg-white  rounded-tr-[150px]">
                
                 <div class="service_conteiner_text">
                     <div class="service_title">
@@ -143,7 +143,7 @@
                     </p>
                     <a class="button_one" href="/Contactos.html" style="background-color: #322016; font-family: 'DosisMedium'; font-weight: 800; color: white;">RESERVA AHORA</a>
                 </div>
-                <div class="service_conteiner_sections">
+                <div class="service_conteiner_sections md:grid mt-[50px] md:grid-cols-2 md:grid-rows-2 gap-[70px] md:gap-[50px] flex flex-wrap justify-center items-center">
                     <div class="service_section service_section2">
                         <img src="/public/icons/corazon2.png" alt="icon de corazon2" class="heart">
                         <img width="50px" height="100px" src="/public/icons/Icono8.png" alt="icon peluqueria">
@@ -172,8 +172,8 @@
                     </div>
                 </div>
             </div>
-            <div class="sectionGallery" style="width: 90%; margin: 50px auto;">
-                <div class="sectionGallery_text">
+            <div class="flex md:flex-row flex-col" style="width: 90%; margin: 50px auto;">
+                <div class="flex flex-col gap-16 w-[90%] wmd:w-[50%] justify-center items-center">
                     <img src="/public/icons/nuestros.svg" alt="">
                     <p style="width: 70%;">
                         Echa un vistado a nuestra galeria y déjate inspirar por los increíbles resultados de nuestros servicios.
@@ -181,12 +181,12 @@
                     <a class="button_one" style="background: #FED688; color: black; font-weight: 700;" href=""> VER GALERIA </a>
                     <img style="width: 400px; height: 450px; object-fit: cover; border-top-right-radius: 100px;" src="/public/img/img3.jpg" alt="">
                 </div>
-                <div class="sectionGallery_images">
-                    <img style=" object-fit: cover;  border-top-left-radius: 100px; width: 330px; height: 460px;"  src="/public/img/img5.jpg" alt="">
+                <div class="grid md:grid-cols-2 md:grid-rows-2 place-items-center gap-7 ">
+                    <img class="w-full md:w-[330px] md:h-[460px]" style="object-fit: cover;  border-top-left-radius: 100px;"  src="/public/img/img5.jpg" alt="">
                     <img style="object-fit: cover; width:330px; height:460px; border-top-right-radius: 100px;" src="/public/img/img6.jpg" alt="">
                     <img style="object-fit: cover; width:330px; height:330px; border-top-right-radius: 100px;" src="/public/img/img7.jpg" alt="">
                     <img style="object-fit: cover; width:330px; height:330px; border-bottom-right-radius: 100px;" src="/public/img/img4.jpeg" alt="">
-                </div> 
+                </div>
             </div>
             <div style="display: grid; place-items: center; padding-bottom: 70px;">
                 <img src="/public/icons/contactanos.svg" alt="">
@@ -204,33 +204,33 @@
             </div>
         </div>
     </main>
-    <footer style="background: #322016; border-top-left-radius: 100px; border-top-right-radius: 100px; padding: 50px; color: white;" class="footerCompu">
-        <div class="footerCompu_1fr">
+    <footer style="background: #322016; border-top-left-radius: 100px; border-top-right-radius: 100px; padding: 50px; color: white;" class="lg:grid grid-cols-3 hidden">
+        <div class="flex flex-col gap-10">
             <h4>CONTACTOS</h4>
             <div>
-                <div class="footerIcons">
+                <div class="flex justify-start items-center gap-5">
                     <img src="/public/icons/email.png" alt=""> <span>centrodebellezajb@gmail.com</span>
                 </div>
-                <div class="footerIcons" style="margin: 10px 0;">
+                <div class="flex justify-start items-center gap-5 my-2">
                     <img src="/public/icons/ubicacion.png" alt=""> <span>Av Sucre “A” frente UPEA</span>
                 </div>
-                <div class="footerIcons">
+                <div class="footericons flex justify-start items-center gap-5">
                     <img src="/public/icons/phone.png" alt=""> <span>(591) 70541576</span>
                 </div>
             </div>
             <h3>VISITANOS EN NUESTRAS REDES</h3>
-            <div class="footerRedes">
+            <div class="flex justify-start gap-6">
                 <img style="width:20px; height: 20px;" src="/public/icons/Icono_facebook.png" alt="">
                 <img style="width:20px; height: 20px;" src="/public/icons/Icono_whatssapp.png" alt="">
                 <img style="width:20px; height: 20px;" src="/public/icons/Icono_tiktok.png" alt="">
             </div>
         </div>
-        <div class="footerLogoCompu">
+        <div class="flex flex-col gap-10">
             <img style="width: 228px; height: 206px; margin: auto;" src="/public/logos/Logo_BLANCO.png" alt="">
             <small style="text-align: center;">La belleza verdadera es atemporal y nace del cuidado, la atención y el amor por uno mismo y por los demás.</small>
         </div>
-        <div class="footerInfo">
-            <div class="div1">
+        <div class="grid grid-cols-2 gap-10">
+            <div class="flex flex-col gap-8 justify-center items-center">
                 <h3>INFORMACIÓN</h3>
                 <a class="activate" href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
             </div>
@@ -249,63 +249,12 @@
             </div>
         </div>
     </footer>
-    <footer style="background: #322016; border-top-left-radius: 100px; border-top-right-radius: 100px; padding: 50px; color: white;" class="footerTablet tabletHidden">
-        <h3>CONTACTOS</h3>
-        <div style="display: flex; justify-content: space-around; align-items: center; font-size: 10px; gap: 30px;">
-            <div class="footerIcons">
-                <img src="/public/icons/email.png" alt=""> <span>centrodebellezajb@gmail.com</span>
-            </div>
-            <div class="footerIcons" style="margin: 1.2rem 0;">
-                <img src="/public/icons/ubicacion.png" alt=""> <span>Av Sucre “A” frente UPEA</span>
-            </div>
-            <div class="footerIcons">
-                <img src="/public/icons/phone.png" alt=""> <span>(591) 70541576</span>
-            </div>
-        </div>
-        <h3>VISITANOS EN NUESTRAS REDES</h3>
-        <div style="display: flex; justify-content: space-around; align-items: center; gap: 30px; margin-top: 30px;">
-            <a href="#"><img style="width: 30px; height: 30px;" src="/public/icons/Icono_facebook.png" alt=""></a>
-            <a href="#"><img style="width: 30px; height: 30px;" src="/public/icons/Icono_whatssapp.png" alt=""></a>
-            <a href="#"><img style="width: 30px; height: 30px;" src="/public/icons/Icono_tiktok.png" alt=""></a>
-        </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr;">
-            <div>
-                <img style="width: 228px; height: 206px; margin: auto;" src="/public/logos/Logo_BLANCO.png" alt="">
-            <small style="text-align: center;">La belleza verdadera es atemporal y nace del cuidado, la atención y el amor por uno mismo y por los demás.</small>
-            </div>
-                <div class="footerContainerInfoTablet">
-                    <div class="footerInfoTablet">
-                        <h3>INFORMACIÓN</h3>
-                        <a class="activate" href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
-                    </div>
-                    <div>
-                        <h3 style="text-align: center;">SERVICIOS</h3>
-                        <ul style="display: flex; flex-direction: column; gap:5px;justify-content: center; align-items: center;">
-                            <li>Peluquería</li>
-                            <li>Estética</li>
-                            <li>Asesoramiento estético</li>
-                            <li>Manicura</li>
-                            <li>Cosméticos</li>
-                            <li>Fragancias</li>
-                            <li>Cuidado personal</li>
-                            <li>Accesorios</li>
-                          </ul>
-                    </div>
-                </div>
-        </div>
-    </footer>
     <footer class="footercel md:hidden">
         <div class="contact-info">
             <h3>CONTACTOS</h3>
-            <div class="footerIcons">
-                <img src="/public/icons/email.png" alt=""> <span>centrodebellezajb@gmail.com</span>
-            </div>
-            <div class="footerIcons" style="margin: 1.2rem 0;">
-                <img src="/public/icons/ubicacion.png" alt=""> <span>Av Sucre “A” frente UPEA</span>
-            </div>
-            <div class="footerIcons">
-                <img src="/public/icons/phone.png" alt=""> <span>(591) 70541576</span>
-            </div>
+            <p class="footericons"><img src="public/icons/email.png" alt=""> centrodebelleza@gmail.com</p>
+            <p class="footericons"><img src="/public/icons/ubicacion.png" alt=""> Av. Sucre "A" frente UPEA</p>
+            <p class="footericons"><img src="/public/icons/phone.png" alt=""> (591) 60229401</p>
         </div>
         <div class="social-icons">
             <h3>VISÍTANOS EN NUESTRAS REDES</h3>
@@ -320,7 +269,6 @@
             <p class="italic">La belleza verdadera es atemporal y nace del cuidado, la atención y el amor por uno mismo y por los demás.</p>
         </div>
         <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 30px;">
-            
             <div class="info">
                 <h3>INFORMACIÓN</h3>
                 <ul>

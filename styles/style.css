@@ -50,16 +50,14 @@ h2{
     color: #322016;
 }
 .ham{
-    margin-bottom: 10px;
     cursor: pointer;
 }
 header{
-    padding: 10px;
     display: flex; 
-position: relative; 
-justify-content: space-around; 
-align-items: center; 
-background-color: #ffffff; 
+    position: relative; 
+    justify-content: space-around; 
+    align-items: center; 
+    background-color: #ffffff;         
 }
 .containerPrinc{
     width: 100%;
@@ -70,29 +68,27 @@ justify-content: center;
 align-items: center; 
 height: 100%; 
 }
+
 .containerLogo > img{
     height: 80px;
 }
-.containerIcons{
- display: none;   
-}
-.containerIcons_icons{
+.navTC_icons{
     display: flex; 
     align-items: center; 
-    height: 100%;   
-    gap: 20px;  
+    height: 100%; 
+    gap: 20px;
 }
 .icon>img{
     height: 23px;
 }
-.comput{
+.navTC_links{
     display: none; 
-justify-content: space-around; 
-align-items: flex-end; 
-width: 100%; 
-height: 50%; 
+    justify-content: space-around; 
+    align-items: flex-end; 
+    width: 100%; 
+    height: 50%; 
 }
-.comput>div{
+.navTC_links>div{
     background-color: #332016;
     padding: 15px;
     width: 100%;
@@ -102,44 +98,48 @@ height: 50%;
     gap:4rem;
     border-top-left-radius: 30px;
 }
+.menu{
+    margin-bottom: 10px;
+}
 .navMobile{
     display: flex; 
-position: absolute; 
-top: 0; 
-right: 0; 
-z-index: 50; 
-padding-top: 6rem;
-padding-bottom: 6rem; 
-flex-direction: column; 
-justify-content: center; 
-align-items: center; 
-width: 70%;
-background: #EFE9E2;
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    z-index: 50; 
+    padding-top: 6rem;
+    padding-bottom: 6rem; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    width: 70%;
+    background: #EFE9E2;
 }
-.navMobile .navHeader{
+.navMobile_header{
     display: flex; 
-position: absolute; 
-padding-left: 2.5rem;
-padding-right: 2.5rem; 
-justify-content: space-between; 
-width: 100%; 
-top: 19px;
-}
-.navHeader img{
-    width: 48.67px;
-}
-.navLink{
-    display: flex; 
-flex-direction: column; 
-justify-content: center; 
-align-items: center; 
+    position: absolute; 
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; 
+    justify-content: space-between; 
+    width: 100%; 
+    top: 19px;
 }
 nav>div>a{
     color: white;
     text-decoration: none;
 }
+.navMobile_links{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 30px;
+}
+.navMobile_links a{
+    color: black;
+}
 .activate{
-    color: #ffd88a;
+    color: #ffd88a !important;
 }
 .Banner{
     position: relative;
@@ -153,7 +153,6 @@ nav>div>a{
     background-position: center;
     background-image: url('/public/princ.jpeg');
     border-bottom-left-radius: 100px;
-    transform: translateY(-10px);
     border-bottom-right-radius: 100px;
     z-index: 40;
 }
@@ -190,13 +189,11 @@ nav>div>a{
 }
 .banner_buttons{
     display: flex; 
-flex-direction: column; 
-justify-content: space-around; 
-align-items: center; 
-margin-top: 20px;
-}
-.celHidden{
-    display: none;
+    flex-direction: column; 
+    justify-content: space-around; 
+    align-items: center; 
+    margin-top: 20px;
+    gap: 15px;
 }
 .button_one{
     width: 185px; padding:11px 0;
@@ -229,99 +226,62 @@ margin-top: 20px;
     font-size: 0.875rem;
     margin-top: 20px;
 }
-.footerCompu{
-    display: none; 
-    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+@media (max-width: 500px) {
+    nav>div>a{
+        color: black;
+    }
+    .activate{
+        color: #E1603B;
+    }
+    h2{
+        font-size: 45px !important;
+    }
+    .Banner{
+        height: 120vh;
+    }
+    .Banner_containerText{
+        width: 70%;
+        font-size: 16px;
+        gap:50px;
+    }
+    .main_title{
+        width: 293px;
+        margin-top: 90px;
+    }
+    .fontoDegrad{
+        background: linear-gradient(to bottom, #32201673, #FED68826);
+    }
+    .ham{
+        height: 50px;
+    }
 }
-.footerCompu_1fr{
-    display: flex; 
-flex-direction: column; 
-gap: 2.5rem; 
-}
-.footerIcons{
-    display: flex; 
-gap: 1.25rem; 
-justify-content: flex-start; 
-align-items: center; 
-}
-.footerRedes{
-    display: flex; 
-gap: 1.5rem; 
-justify-content: flex-start; 
-}
-.footerLogoCompu{
-    display: flex; 
-flex-direction: column; 
-gap: 2.5rem; 
-}
-.footerInfo{
-    display: grid;
-grid-template-columns: repeat(2, minmax(0, 1fr)); 
-gap: 2.5rem; 
-}
-.footerInfo .div1{
-    display: flex; 
-flex-direction: column; 
-gap: 2rem; 
-justify-content: center; 
-align-items: center;     
-}
-.footerTablet{
-    flex-direction: column; 
-justify-content: center; 
-align-items: center; 
-}
-.footerIconsCel{
-    display: flex; 
-gap: 0.5rem; 
-justify-content: flex-start; 
-align-items: center; 
-}
-.footerContainerInfoTablet{
-    display: grid;
-margin-top: 2.5rem; 
-grid-template-columns: repeat(2, minmax(0, 1fr)); 
-gap: 2.5rem; 
-}
-.footerInfoTablet{
-    display: flex; 
-flex-direction: column; 
-gap: 0.25rem; 
-justify-content: center; 
-align-items: center; 
-}
-.tabletHidden{
-    display: none; 
-}
-.modalMobile{
-    display: flex; 
-flex-direction: column; 
-justify-content: center; 
-align-items: center; 
-font-weight: 600; 
-gap: 20px;
 
+@media (min-width: 768px) { 
+  .navTC{
+    display: block; 
+  }
 }
-@media (min-width: 1024px) { 
+
+@media (min-width: 1024px) {
     header{
         justify-content: space-between; 
-  padding-top: 30px;
+        padding-top: 30px;
     }
     .containerLogo{
         width: 36%;
     }
-    .containerIcons{
-        width: 100%;
+    .navTC{ 
+        width: 100%; 
     }
-    .containerIcons_icons{
+    .navTC_links{
+        display: block;
+    }
+    .navTC_icons{
         padding-right: 7rem; 
-justify-content: flex-end; 
-margin-bottom: 20px;
+        justify-content: flex-end; 
+        margin-bottom: 20px;
     }
-    .comput{
-        display: flex; 
-    }
-    .ham{
+    .menu{
         display: none; 
     }
     .navMobile{
@@ -329,34 +289,5 @@ margin-bottom: 20px;
     }
     .banner_buttons{
         width: 90%;
-    }
-    .compuHidden{
-        display: none;
-    }
-    .compuBlock{
-        display: block;
-    }
-    .footerCompu{
-        display: grid;
-    }
-
-}
-@media (min-width: 768px) { 
-    .containerIcons{
-        display: block; 
-    }
-    .footerTablet{
-        display: flex; 
-    }
-    .compucelHidden{
-        display: none;
-    }
-    .tabletHidden{
-        display: block; 
-    }
-}
-@media (min-width:1024px) {
-    .tabletHidden{
-        display: none; 
     }
 }
