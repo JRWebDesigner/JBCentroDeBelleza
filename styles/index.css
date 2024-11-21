@@ -5,6 +5,7 @@
     background-color: #ffffff; 
     padding: 50px;
     padding-top: 40vh;
+    transform: translateY(-70px);
 }
 .service_conteiner_text{
     display: flex;
@@ -20,10 +21,11 @@
 }
 .service_conteiner_sections{
     display: flex; 
-flex-wrap: wrap; 
-justify-content: center; 
-align-items: center; 
-margin-top: 50px;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 50px;
+    gap: 4rem;
 }
 .service_title{
     text-align: center;

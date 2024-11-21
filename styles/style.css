@@ -153,6 +153,7 @@ nav>div>a{
     background-position: center;
     background-image: url('/public/princ.jpeg');
     border-bottom-left-radius: 100px;
+    transform: translateY(-10px);
     border-bottom-right-radius: 100px;
     z-index: 40;
 }
@@ -289,7 +290,10 @@ gap: 0.25rem;
 justify-content: center; 
 align-items: center; 
 }
+.tabletHidden{
+    display: none; 
 
+}
 @media (min-width: 1024px) { 
     header{
         justify-content: space-between; 
@@ -327,6 +331,7 @@ margin-bottom: 20px;
     .footerCompu{
         display: grid;
     }
+
 }
 @media (min-width: 768px) { 
     .containerIcons{
@@ -334,5 +339,16 @@ margin-bottom: 20px;
     }
     .footerTablet{
         display: flex; 
+    }
+    .compucelHidden{
+        display: none;
+    }
+    .tabletHidden{
+        display: block; 
+    }
+}
+@media (min-width:1024px) {
+    .tabletHidden{
+        display: none; 
     }
 }
