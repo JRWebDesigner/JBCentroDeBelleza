@@ -292,6 +292,14 @@ align-items: center;
 }
 .tabletHidden{
     display: none; 
+}
+.modalMobile{
+    display: flex; 
+flex-direction: column; 
+justify-content: center; 
+align-items: center; 
+font-weight: 600; 
+gap: 20px;
 
 }
 @media (min-width: 1024px) { 
