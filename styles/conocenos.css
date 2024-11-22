@@ -1,0 +1,48 @@
+h2{
+    text-align: center;
+}
+.Card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.Card:nth-child(1n){
+    flex-wrap: wrap-reverse; 
+}
+.Card:nth-child(2n){
+    flex-wrap: wrap; 
+}
+.Card img{
+    width: 500px;
+    height: 550px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+.Card_text{
+    padding:100px 60px;
+    background-color: #322016;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    font-family: 'DosisExtraLigth';
+}
+.MisionVision{
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) { 
+  .Card{
+    flex-wrap: nowrap; 
+  }
+  .Card:nth-child(1n), .Card:nth-child(2n){
+    flex-wrap: nowrap; 
+  }
+  .MisionVision{
+    flex-wrap: nowrap; 
+  }
+}
+
