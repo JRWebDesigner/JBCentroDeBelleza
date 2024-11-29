@@ -1,0 +1,108 @@
+h2{
+    text-align: center;
+    margin: 30px 0;
+}
+h3{
+    font-family: 'DosisVariable';
+    color: #E1603B;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 360px;
+    background: #EFE9E2;
+    padding:40px 10px;
+    border-radius: 30px;
+    gap: 15px;
+}
+.container p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    font-family: 'DosisSemiBold';
+}
+.redes{
+    width: 100vw; background-color: #EFE9E2; display: flex; justify-content: center; align-items: center; gap: 70px;
+    padding: 20px 0;
+}
+.redes div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E1603B;
+    gap: 20px;
+    font-weight: 700;
+}
+
+.form-container {
+    background-color: white;
+    border: 2px solid #f3b55d;
+    border-radius: 15px;
+    padding: 30px;
+    width: 60%;
+    min-width: 300px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f3b55d;
+    border-radius: 10px;
+    background-color: #FED688;
+    font-size: 14px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: black;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+    background-color: #FED688;
+    border-radius: 30px;
+    padding: 10px;
+}
+.questions{
+    display: flex; justify-content: center; align-items: center; gap: 20px;
+    flex-wrap: wrap;
+}
+.questions div{
+    background-color: #322016;
+    color: white;
+    padding: 40px;
+    width: 390px;
+    height: 390px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+span,hr{
+    width: 80%;
+}
+@media (max-width: 500px) {
+    .redes{
+        flex-direction: column;
+        gap: 30px;
+    }
+}

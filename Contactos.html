@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos</title>
+    <title>Tienda</title>
     <link rel="stylesheet" href="/styles/style.css">
-
+    <link rel="stylesheet" href="/styles/contactos.css">
 </head>
 <body>
     <header>
         <div class="containerLogo">
             <img class="logo" src="/public/logos/LOGO_NARANJA.png" alt="logo naranja JB">
         </div>
-        <div class="containerIcons celHidden tabletBlock lg:w-full">
-            <div class="containerIcons_icons">
+        <div class="navTC">
+            <div class="navTC_icons">
                 <a class="icon" href="/">
                     <img src="/public/icons/Icono_facebook.png" alt="icon facebook">
                 </a><a class="icon" href="/">
@@ -22,55 +22,166 @@
                     <img src="/public/icons/Icono_tiktok.png" alt="icon tiktok">
                 </a>
             </div>
-            <nav class="comput">
+            <nav class="navTC_links">
                 <div>
-                    <a class="activate" href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
+                    <a href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a class="activate" href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
                 </div>
             </nav>
         </div>
         <div>
-            <img class="ham lg:hidden mb-[10px]" src="/public/icons/ham.png" alt="icon de menu">
+            <img class="ham menu" src="/public/icons/ham.png" alt="icon de menu">
             <nav class="navMobile descNav">
-                <div class="absolute top-[19px] w-full flex justify-between px-10">
-                    <img class="containerLogo w-[48.67px]" src="/public/logos/LOGO_NARANJA.png" alt="logo naranja">
+                <div class="navMobile_header">
+                    <img class="containerLogo" style="width:48.67px;" src="/public/logos/LOGO_NARANJA.png" alt="logo naranja">
                     <svg class="ham" xmlns="http://www.w3.org/2000/svg"  width="34"  height="34"  viewBox="0 0 24 24"  fill="none" stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
                 </div>
-                <div class="modalMobile">
-                    <a class="activate" href="/">INICIO</a><a style="color: black;" href="/Conocenos.html">CONÓCENOS</a><a style="color: black;" href="/Servicio.html">SERVICIOS</a><a style="color: black;" href="/Tienda.html">TIENDA</a><a style="color: black;" href="/Galeria.html">GALERIA</a><a style="color: black;" href="/Contactos.html">CONTACTOS</a><a style="color: black;" href="/Blog.html">BLOG</a>
+                <div class="navMobile_links" >
+                    <a href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a class="activate" href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
                 </div>
             </nav>
         </div>
     </header>
-    <main></main>
+    <main>
+        <div style="background-color: white; border-bottom-left-radius: 100px; padding-bottom: 30px;">
+            <div class="Tag">
+                <a href="/">
+                    <img style="width: 30px;" src="/public/icons/Icono_home (1).png" alt=""> 
+                </a>
+                <img src="/public/icons/flechita.png" alt="">  
+                <a style="color: black;" href="/Conocenos.html">CONTACTOS</a>
+            </div>
+            <section class="BannerSecundario" style="background-image: url('/public/banner2.png');">
+                <h1 style="font-family: 'Secramento'; font-size: 90px; color: white; font-weight: 300">Contactos</h1>
+                <a class="button_one" style="background-color: #E1603B; font-weight: 600;" href="/Contactos.html">RESERVA TU CITA</a>
+            </section>
+            <section>
+                <h2>Información</h2>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 50px;">
+                    <div>
+                        <div class="container" style="margin-bottom: 50px;">
+                            <img src="/public/icons/cont.svg" alt="">
+                            <div>
+                                <h3>RESERVA POR CORREO</h3>
+                                <p>
+                                    centrodebelleza@gmail.com
+                                    <br>
+                                    jeaninabrañez@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <img src="/public/icons/cont2.svg" alt="">
+                            <div>
+                                <h3>RESERVA POR TELÉFONO</h3>
+                                <p>
+                                    (591) 63222940 
+                                    <br>
+                                    (591) 70541576
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" style="flex-direction: column;">
+                        <img src="/public/icons/cont3.svg" alt="">
+                        <div>
+                            <h3>HORAS DE TRABAJO</h3>
+                            <img src="/public/icons/horarios.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <h2>Visita nuestras redes</h2>
+                <div class="redes">
+                    <div>
+                        <img style="width: 22px;" src="/public//icons/Icono_facebook.png" alt="facebook">
+                        <span>Centro de belleza JB - Jeanina Brañez</span>
+                    </div>
+                    <div>
+                        <img style="width: 37px;" src="/public//icons/Icono_whatssapp.png" alt="facebook">
+                        <span>(591) 63222940</span>
+                    </div>
+                    <div>
+                        <img style="width: 30px;" src="/public//icons/Icono_tiktok.png" alt="facebook">
+                        <span>@centrodebellezajb</span>
+                    </div>
+                </div>
+                <section style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 40px 0;">
+                    <img src="/public/icons/contactanos.svg" alt="contactos">
+                    <div class="form-container">
+                        <form>
+                          <div class="form-group">
+                            <input type="text" placeholder="Nombre..." required>
+                            <input type="email" placeholder="E-mail..." required>
+                          </div>
+                          <textarea placeholder="Escribe tu mensaje..." required></textarea>
+                          <br>
+                          <button class="button_one" style="background-color: #322016; color: white;margin-top: 10px; font-weight: 700;" type="submit">ENVIAR</button>
+                        </form>
+                    </div>
+                </section> 
+                <h2>
+                    Las preguntas más frecuentes
+                </h2>
+                <div class="questions">
+                    <div style="border-bottom-left-radius: 100px; border-top-left-radius: 100px;">
+                        <span>¿Cómo puedo reservar una cita? </span>
+                        <hr>
+                        <span>¿Que productos utilizan?</span>
+                        <hr>
+                        <span>¿Cuánto tiempo dura un servicio?</span>
+                        <hr>    
+                        <span>¿Hay promociones o descuentos en?</span>
+                        <hr>
+                        <span>¿Tiene servicio para eventos especiales?</span>
+                        <hr>
+                    </div>
+                    <div style="border-bottom-right-radius: 100px; border-top-right-radius: 100px;">
+                        <span>¿Que hago si llego tarde a mi cita?</span>
+                        <hr>
+                        <span>¿Ofrecen paquetes para grupos o eventos?</span>
+                        <hr>
+                        <span>¿Cúal es el costo de los servicios?</span>
+                        <hr>
+                        <span>¿Ofren servicio a domicilio?</span>
+                        <hr>
+                        <span>¿Puedo cambiar mi cita una vez reservada? </span>
+                        <hr>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <img style="width: 700px; margin:40px auto;"  src="/public/icons/maps.png" alt="">
+        </div>
+    </main>
     <footer style="background: #322016; border-top-left-radius: 100px; border-top-right-radius: 100px; padding: 50px; color: white;" class="footerCompu">
-        <div class="footerCompu_1fr">
+        <div style="display: flex; flex-direction: column; gap:2.5rem">
             <h4>CONTACTOS</h4>
             <div>
-                <div class="footerIcons">
+                <div class="footericons">
                     <img src="/public/icons/email.png" alt=""> <span>centrodebellezajb@gmail.com</span>
                 </div>
-                <div class="footerIcons" style="margin: 10px 0;">
+                <div class="footericons">
                     <img src="/public/icons/ubicacion.png" alt=""> <span>Av Sucre “A” frente UPEA</span>
                 </div>
-                <div class="footerIcons">
+                <div class="footericons">
                     <img src="/public/icons/phone.png" alt=""> <span>(591) 70541576</span>
                 </div>
             </div>
             <h3>VISITANOS EN NUESTRAS REDES</h3>
-            <div class="footerRedes">
+            <div style="display: flex; justify-content: start; gap: 2rem;">
                 <img style="width:20px; height: 20px;" src="/public/icons/Icono_facebook.png" alt="">
                 <img style="width:20px; height: 20px;" src="/public/icons/Icono_whatssapp.png" alt="">
                 <img style="width:20px; height: 20px;" src="/public/icons/Icono_tiktok.png" alt="">
             </div>
         </div>
-        <div class="footerLogoCompu">
+        <div style="display: flex; flex-direction: column; gap: 2.5rem;">
             <img style="width: 228px; height: 206px; margin: auto;" src="/public/logos/Logo_BLANCO.png" alt="">
             <small style="text-align: center;">La belleza verdadera es atemporal y nace del cuidado, la atención y el amor por uno mismo y por los demás.</small>
         </div>
-        <div class="footerInfo">
-            <div class="div1">
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem;">
+            <div style="display: flex; flex-direction: column; gap: 2rem; justify-content: center; align-items: center; ">
                 <h3>INFORMACIÓN</h3>
-                <a class="activate" href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
+                <a href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a class="activate" href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
             </div>
             <div>
                 <h3 style="text-align: center;">SERVICIOS</h3>
@@ -87,63 +198,12 @@
             </div>
         </div>
     </footer>
-    <footer style="background: #322016; border-top-left-radius: 100px; border-top-right-radius: 100px; padding: 50px; color: white;" class="footerTablet tabletHidden">
-        <h3>CONTACTOS</h3>
-        <div style="display: flex; justify-content: space-around; align-items: center; font-size: 10px; gap: 30px;">
-            <div class="footerIcons">
-                <img src="/public/icons/email.png" alt=""> <span>centrodebellezajb@gmail.com</span>
-            </div>
-            <div class="footerIcons" style="margin: 1.2rem 0;">
-                <img src="/public/icons/ubicacion.png" alt=""> <span>Av Sucre “A” frente UPEA</span>
-            </div>
-            <div class="footerIcons">
-                <img src="/public/icons/phone.png" alt=""> <span>(591) 70541576</span>
-            </div>
-        </div>
-        <h3>VISITANOS EN NUESTRAS REDES</h3>
-        <div style="display: flex; justify-content: space-around; align-items: center; gap: 30px; margin-top: 30px;">
-            <a href="#"><img style="width: 30px; height: 30px;" src="/public/icons/Icono_facebook.png" alt=""></a>
-            <a href="#"><img style="width: 30px; height: 30px;" src="/public/icons/Icono_whatssapp.png" alt=""></a>
-            <a href="#"><img style="width: 30px; height: 30px;" src="/public/icons/Icono_tiktok.png" alt=""></a>
-        </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr;">
-            <div>
-                <img style="width: 228px; height: 206px; margin: auto;" src="/public/logos/Logo_BLANCO.png" alt="">
-            <small style="text-align: center;">La belleza verdadera es atemporal y nace del cuidado, la atención y el amor por uno mismo y por los demás.</small>
-            </div>
-                <div class="footerContainerInfoTablet">
-                    <div class="footerInfoTablet">
-                        <h3>INFORMACIÓN</h3>
-                        <a class="activate" href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
-                    </div>
-                    <div>
-                        <h3 style="text-align: center;">SERVICIOS</h3>
-                        <ul style="display: flex; flex-direction: column; gap:5px;justify-content: center; align-items: center;">
-                            <li>Peluquería</li>
-                            <li>Estética</li>
-                            <li>Asesoramiento estético</li>
-                            <li>Manicura</li>
-                            <li>Cosméticos</li>
-                            <li>Fragancias</li>
-                            <li>Cuidado personal</li>
-                            <li>Accesorios</li>
-                          </ul>
-                    </div>
-                </div>
-        </div>
-    </footer>
-    <footer class="footercel md:hidden">
+    <footer class="footercel">
         <div class="contact-info">
             <h3>CONTACTOS</h3>
-            <div class="footerIcons">
-                <img src="/public/icons/email.png" alt=""> <span>centrodebellezajb@gmail.com</span>
-            </div>
-            <div class="footerIcons" style="margin: 1.2rem 0;">
-                <img src="/public/icons/ubicacion.png" alt=""> <span>Av Sucre “A” frente UPEA</span>
-            </div>
-            <div class="footerIcons">
-                <img src="/public/icons/phone.png" alt=""> <span>(591) 70541576</span>
-            </div>
+            <p class="footericons"><img src="public/icons/email.png" alt=""> centrodebelleza@gmail.com</p>
+            <p class="footericons"><img src="/public/icons/ubicacion.png" alt=""> Av. Sucre "A" frente UPEA</p>
+            <p class="footericons"><img src="/public/icons/phone.png" alt=""> (591) 60229401</p>
         </div>
         <div class="social-icons">
             <h3>VISÍTANOS EN NUESTRAS REDES</h3>
@@ -158,7 +218,6 @@
             <p class="italic">La belleza verdadera es atemporal y nace del cuidado, la atención y el amor por uno mismo y por los demás.</p>
         </div>
         <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 30px;">
-            
             <div class="info">
                 <h3>INFORMACIÓN</h3>
                 <ul>
@@ -186,6 +245,7 @@
             <p>©Copyright 2023. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/scripts/app.js"></script>
 </body>
 </html>

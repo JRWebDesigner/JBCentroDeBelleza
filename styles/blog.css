@@ -1,0 +1,68 @@
+*{
+    font-family: 'DosisMedium';
+}
+h2{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    color: #E1603B;
+}
+.noticia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.noticia img{
+    width: 450px;
+    height: 495px;
+    object-fit: cover;
+}
+.noticia_info div{
+    border-radius: 50px;
+    display: grid;
+    place-items: center;
+    background-color: #322016;
+    width:450px;
+    height:300px;
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+}
+.noticia_info small{
+    font-size: 16px;
+    color: #FED688;
+}
+.remoendaciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.remoendaciones_card{
+    border-radius: 30px;
+    min-height: 530px;
+    width: 350px;
+    background-color: #fff;
+}
+.remoendaciones_card img{
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 350px;
+    height:350px;
+    object-fit: cover;
+}
+.remoendaciones_card div{
+    margin: 30px;
+    display: grid;
+    place-items: center;
+    gap: 3rem;
+    padding-bottom: 30px;
+}
+.remoendaciones_card div p{
+    opacity: .7;
+}

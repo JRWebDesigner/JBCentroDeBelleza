@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/blog.css">
 </head>
 <body>
     <header>
         <div class="containerLogo">
             <img class="logo" src="/public/logos/LOGO_NARANJA.png" alt="logo naranja JB">
         </div>
-        <div class="containerIcons celHidden tabletBlock">
-            <div class="containerIcons_icons">
+        <div class="navTC">
+            <div class="navTC_icons">
                 <a class="icon" href="/">
                     <img src="/public/icons/Icono_facebook.png" alt="icon facebook">
                 </a><a class="icon" href="/">
@@ -21,55 +22,121 @@
                     <img src="/public/icons/Icono_tiktok.png" alt="icon tiktok">
                 </a>
             </div>
-            <nav class="comput">
+            <nav class="navTC_links">
                 <div>
-                    <a class="activate" href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
+                    <a href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a class="activate" href="/Blog.html">BLOG</a>
                 </div>
             </nav>
         </div>
         <div>
-            <img class="ham" style="margin-bottom: 30px;" src="/public/icons/ham.png" alt="icon de menu">
-            <nav class="navMobile descNav lg:hidden absolute w-[70%] top-0 right-0 py-24 flex justify-center items-center flex-col z-50 bg-[#EFE9E2] rounded-tl-[30px] rounded-bl-[30px]">
-                <div class="absolute top-[19px] w-full flex justify-between px-10">
-                    <img class="containerLogo w-[48.67px]" src="/public/logos/LOGO_NARANJA.png" alt="logo naranja">
+            <img class="ham menu" src="/public/icons/ham.png" alt="icon de menu">
+            <nav class="navMobile descNav">
+                <div class="navMobile_header">
+                    <img class="containerLogo" style="width:48.67px;" src="/public/logos/LOGO_NARANJA.png" alt="logo naranja">
                     <svg class="ham" xmlns="http://www.w3.org/2000/svg"  width="34"  height="34"  viewBox="0 0 24 24"  fill="none" stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
                 </div>
-                <div class="modalMobile">
-                    <a class="activate" href="/">INICIO</a><a style="color: black;" href="/Conocenos.html">CONÓCENOS</a><a style="color: black;" href="/Servicio.html">SERVICIOS</a><a style="color: black;" href="/Tienda.html">TIENDA</a><a style="color: black;" href="/Galeria.html">GALERIA</a><a style="color: black;" href="/Contactos.html">CONTACTOS</a><a style="color: black;" href="/Blog.html">BLOG</a>
+                <div class="navMobile_links" >
+                    <a href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a class="activate" href="/Blog.html">BLOG</a>
                 </div>
             </nav>
         </div>
     </header>
-    <main></main>
+    <main>
+        <div style="background-color: white; border-bottom-left-radius: 100px; padding-bottom: 30px;">
+            <div class="Tag">
+                <a href="/">
+                    <img style="width: 30px;" src="/public/icons/Icono_home (1).png" alt=""> 
+                </a>
+                <img src="/public/icons/flechita.png" alt="">  
+                <a style="color: black;" href="/Conocenos.html">BLOG</a>
+            </div>
+            <section class="BannerSecundario" style="background-image: url('/public/banner2.png');">
+                <h1 style="font-family: 'Secramento'; font-size: 90px; color: white; font-weight: 300">Blog</h1>
+                <p style="color: white;">ADQUIERE TODOS ESTOS PRODUCTOS CON NOSOTROS</p>
+                <a class="button_one" style="background-color: #E1603B; font-weight: 600;" href="/Contactos.html">RESERVA TU CITA</a>
+            </section>
+            <article style="margin: 5rem 0;">
+                <section class="noticia">
+                    <img style="border-top-right-radius: 100px;" src="/public/img/img3.jpg" alt="">
+                    <div class="noticia_info">
+                        <h2>Consejos de maquillaje</h2>
+                        <div>
+                            <small>Descubre el secreto para resaltar tu belleza</small>
+                            <p>El maquillaje es una poderosa herramienta que te permite expresarte, realzar tu belleza y sentirte segura en cualquier ocasión.
+                                <br>
+                                <br>
+                                Aún cuando estés comenzando en el mundo del maquillaje o busques perfeccionar tu técnica, estos consejos te ayudarán a conseguir un look espectacular...</p>
+                            <a class="button_one" style="border: 1px solid #FED688; color: #FED688; font-weight: 900;" href="">MÁS INFORMACIÓN</a>
+                        </div>
+                    </div>
+                </section>
+                <section style="margin-top: 3rem; flex-wrap: wrap-reverse;" class="noticia">
+                    <div class="noticia_info">
+                        <h2>Cuidado del rostro</h2>
+                        <div>
+                            <small>Descubre el secreto para resaltar tu belleza</small>
+                            <p>Tu rostro es tu mejor carta de presentación, y mantenerlo saludable y luminoso requiere de una rutina de cuidado adecuada.
+                                <br>
+                                <br> 
+                                Seguir unos simples pasos puede marcar la diferencia en la salud y apariencia de tu piel, aquí te damos algunos consejos esenciales para que luzcas un rostro...</p>
+                            <a class="button_one" style="border: 1px solid #FED688; color: #FED688; font-weight: 900;" href="">MÁS INFORMACIÓN</a>
+                        </div>
+                    </div>
+                    <img style="border-bottom-left-radius: 100px;" src="/public/img/fotoperfil.jpeg" alt="">
+                </section>
+            </article>    
+        </div> 
+        <h2 style="margin-top: 5rem;">
+            Recomendando productos
+        </h2>´
+        <section class="remoendaciones">
+            <div class="remoendaciones_card">
+                <img src="/public/img/rec1.jpeg" alt="">
+                <div>
+                    <h4>Protege tu Piel Todos los Días con el Bloqueador Solar de Yanbal</h4>
+                    <p>El sol es una de las principales causas de envejecimiento y daño en la piel, por eso es esencial contar con un protector solar confiable que te cuide cada día. El Bloqueador Solar UV Defense de Yanbal es la elección perfecta...</p>
+                    <a class="button_one" style="border: 1px solid black; font-weight: 900; color: black;">MÁS INFORMACIÓN</a>
+                </div>
+            </div>
+            <div class="remoendaciones_card">
+                <img src="/public/img/producto1.jpeg" alt="">
+                <div>
+                    <h4>Protege tu Piel Todos los Días con el Bloqueador Solar de Yanbal</h4>
+                    <p>El sol es una de las principales causas de envejecimiento y daño en la piel, por eso es esencial contar con un protector solar confiable que te cuide cada día. El Bloqueador Solar UV Defense de Yanbal es la elección perfecta...</p>
+                    <a class="button_one" style="border: 1px solid black; font-weight: 900; color: black;">MÁS INFORMACIÓN</a>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer style="background: #322016; border-top-left-radius: 100px; border-top-right-radius: 100px; padding: 50px; color: white;" class="footerCompu">
-        <div class="footerCompu_1fr">
+        <div style="display: flex; flex-direction: column; gap:2.5rem">
             <h4>CONTACTOS</h4>
             <div>
-                <div class="footerIcons">
+                <div class="footericons">
                     <img src="/public/icons/email.png" alt=""> <span>centrodebellezajb@gmail.com</span>
                 </div>
-                <div class="footerIcons" style="margin: 10px 0;">
+                <div class="footericons">
                     <img src="/public/icons/ubicacion.png" alt=""> <span>Av Sucre “A” frente UPEA</span>
                 </div>
-                <div class="footerIcons">
+                <div class="footericons">
                     <img src="/public/icons/phone.png" alt=""> <span>(591) 70541576</span>
                 </div>
             </div>
             <h3>VISITANOS EN NUESTRAS REDES</h3>
-            <div class="footerRedes">
+            <div style="display: flex; justify-content: start; gap: 2rem;">
                 <img style="width:20px; height: 20px;" src="/public/icons/Icono_facebook.png" alt="">
                 <img style="width:20px; height: 20px;" src="/public/icons/Icono_whatssapp.png" alt="">
                 <img style="width:20px; height: 20px;" src="/public/icons/Icono_tiktok.png" alt="">
             </div>
         </div>
-        <div class="footerLogoCompu">
+        <div style="display: flex; flex-direction: column; gap: 2.5rem;">
             <img style="width: 228px; height: 206px; margin: auto;" src="/public/logos/Logo_BLANCO.png" alt="">
             <small style="text-align: center;">La belleza verdadera es atemporal y nace del cuidado, la atención y el amor por uno mismo y por los demás.</small>
         </div>
-        <div class="footerInfo">
-            <div class="div1">
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem;">
+            <div style="display: flex; flex-direction: column; gap: 2rem; justify-content: center; align-items: center; ">
                 <h3>INFORMACIÓN</h3>
-                <a class="activate" href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
+                <a href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a class="activate" href="/Blog.html">BLOG</a>
             </div>
             <div>
                 <h3 style="text-align: center;">SERVICIOS</h3>
@@ -86,63 +153,12 @@
             </div>
         </div>
     </footer>
-    <footer style="background: #322016; border-top-left-radius: 100px; border-top-right-radius: 100px; padding: 50px; color: white;" class="footerTablet tabletHidden">
-        <h3>CONTACTOS</h3>
-        <div style="display: flex; justify-content: space-around; align-items: center; font-size: 10px; gap: 30px;">
-            <div class="footerIcons">
-                <img src="/public/icons/email.png" alt=""> <span>centrodebellezajb@gmail.com</span>
-            </div>
-            <div class="footerIcons" style="margin: 1.2rem 0;">
-                <img src="/public/icons/ubicacion.png" alt=""> <span>Av Sucre “A” frente UPEA</span>
-            </div>
-            <div class="footerIcons">
-                <img src="/public/icons/phone.png" alt=""> <span>(591) 70541576</span>
-            </div>
-        </div>
-        <h3>VISITANOS EN NUESTRAS REDES</h3>
-        <div style="display: flex; justify-content: space-around; align-items: center; gap: 30px; margin-top: 30px;">
-            <a href="#"><img style="width: 30px; height: 30px;" src="/public/icons/Icono_facebook.png" alt=""></a>
-            <a href="#"><img style="width: 30px; height: 30px;" src="/public/icons/Icono_whatssapp.png" alt=""></a>
-            <a href="#"><img style="width: 30px; height: 30px;" src="/public/icons/Icono_tiktok.png" alt=""></a>
-        </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr;">
-            <div>
-                <img style="width: 228px; height: 206px; margin: auto;" src="/public/logos/Logo_BLANCO.png" alt="">
-            <small style="text-align: center;">La belleza verdadera es atemporal y nace del cuidado, la atención y el amor por uno mismo y por los demás.</small>
-            </div>
-                <div class="footerContainerInfoTablet">
-                    <div class="footerInfoTablet">
-                        <h3>INFORMACIÓN</h3>
-                        <a class="activate" href="/">INICIO</a><a href="/Conocenos.html">CONÓCENOS</a><a href="/Servicio.html">SERVICIOS</a><a href="/Tienda.html">TIENDA</a><a href="/Galeria.html">GALERIA</a><a href="/Contactos.html">CONTACTOS</a><a href="/Blog.html">BLOG</a>
-                    </div>
-                    <div>
-                        <h3 style="text-align: center;">SERVICIOS</h3>
-                        <ul style="display: flex; flex-direction: column; gap:5px;justify-content: center; align-items: center;">
-                            <li>Peluquería</li>
-                            <li>Estética</li>
-                            <li>Asesoramiento estético</li>
-                            <li>Manicura</li>
-                            <li>Cosméticos</li>
-                            <li>Fragancias</li>
-                            <li>Cuidado personal</li>
-                            <li>Accesorios</li>
-                          </ul>
-                    </div>
-                </div>
-        </div>
-    </footer>
-    <footer class="footercel md:hidden">
+    <footer class="footercel">
         <div class="contact-info">
             <h3>CONTACTOS</h3>
-            <div class="footerIcons">
-                <img src="/public/icons/email.png" alt=""> <span>centrodebellezajb@gmail.com</span>
-            </div>
-            <div class="footerIcons" style="margin: 1.2rem 0;">
-                <img src="/public/icons/ubicacion.png" alt=""> <span>Av Sucre “A” frente UPEA</span>
-            </div>
-            <div class="footerIcons">
-                <img src="/public/icons/phone.png" alt=""> <span>(591) 70541576</span>
-            </div>
+            <p class="footericons"><img src="public/icons/email.png" alt=""> centrodebelleza@gmail.com</p>
+            <p class="footericons"><img src="/public/icons/ubicacion.png" alt=""> Av. Sucre "A" frente UPEA</p>
+            <p class="footericons"><img src="/public/icons/phone.png" alt=""> (591) 60229401</p>
         </div>
         <div class="social-icons">
             <h3>VISÍTANOS EN NUESTRAS REDES</h3>
@@ -157,7 +173,6 @@
             <p class="italic">La belleza verdadera es atemporal y nace del cuidado, la atención y el amor por uno mismo y por los demás.</p>
         </div>
         <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 30px;">
-            
             <div class="info">
                 <h3>INFORMACIÓN</h3>
                 <ul>
