@@ -114,6 +114,8 @@ header{
     align-items: center; 
     width: 70%;
     background: #EFE9E2;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 .navMobile_header{
     display: flex; 

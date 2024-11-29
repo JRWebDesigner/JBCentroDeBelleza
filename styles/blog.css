@@ -66,3 +66,9 @@ h4{
 .remoendaciones_card div p{
     opacity: .7;
 }
+@media (max-width: 500px){
+    .remoendaciones_card img{
+        width: 250px;
+        height:250px;
+    }
+}

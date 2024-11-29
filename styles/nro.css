@@ -1,0 +1,38 @@
+*{
+    font-family: 'DosisMedium';
+}
+h3{
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+article{
+    margin: 4rem 0;
+    padding: 0 10%;
+    color: #322016;
+}
+ol,ul{
+    margin: 5%;
+}
+ul li{
+    list-style: circle;
+}
+p{
+    margin-top: 30px;
+}
+.galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.galeria img{
+    width: 300px;
+    border-radius: 30px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
