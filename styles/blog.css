@@ -67,7 +67,7 @@ h4{
     opacity: .7;
 }
 @media (max-width: 500px){
-    .remoendaciones_card img{
+    .noticia img{
         width: 250px;
         height:250px;
     }
