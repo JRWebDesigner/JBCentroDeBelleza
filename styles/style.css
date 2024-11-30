@@ -54,6 +54,7 @@ h2{
     cursor: pointer;
 }
 header{
+    width: 100vw;
     display: flex; 
     position: relative; 
     justify-content: space-around; 
