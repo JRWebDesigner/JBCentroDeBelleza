@@ -15,8 +15,8 @@ h2{
     flex-wrap: wrap; 
 }
 .Card img{
-    width: 500px;
-    height: 550px;
+    width: 80%;
+    height: 450px;
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
     object-fit: cover;
@@ -43,6 +43,10 @@ h2{
   }
   .Card{
     flex-wrap: nowrap; 
+  }
+  .Card img{
+    width: 500px;
+    height: 550px;    
   }
   .Card:nth-child(1n), .Card:nth-child(2n){
     flex-wrap: nowrap; 
