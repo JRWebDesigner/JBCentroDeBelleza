@@ -252,4 +252,7 @@ textarea {
     .containerSecond_Foto {
         display: block;
     }
+    .containerSecond_Foto img{
+        width: 200px;
+    }
 }
