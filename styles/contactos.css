@@ -66,7 +66,9 @@ h3{
     background-color: #FED688;
     font-size: 14px;
 }
-
+.maps{
+    width: 700px; margin:40px auto;
+}
 input::placeholder,
 textarea::placeholder {
     color: black;
@@ -101,6 +103,10 @@ span,hr{
     width: 80%;
 }
 @media (max-width: 500px) {
+    .maps{
+        width:70%;
+        margin: auto;
+    }
     .redes{
         flex-direction: column;
         gap: 30px;
