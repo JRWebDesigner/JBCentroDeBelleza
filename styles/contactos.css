@@ -29,6 +29,10 @@ h3{
     width: 100%; background-color: #EFE9E2; display: flex; justify-content: center; align-items: center; gap: 70px;
     padding: 20px 0;
 }
+#contactotitle{
+    width: 90%;
+    margin: auto;   
+}
 .redes div{
     display: flex;
     justify-content: center;
@@ -111,4 +115,8 @@ span,hr{
         flex-direction: column;
         gap: 30px;
     }
+    .container{
+        width: 80%;
+        margin: auto;
+    }   
 }
