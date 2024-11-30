@@ -11,8 +11,8 @@
     gap: 10px;
 }
 .container_one> img{
-    width: 180px;
-    height: 180px;
+    width: 480px;
+    height: 480px;
     object-fit: cover;
     border-top-left-radius: 100px;
 }
@@ -64,6 +64,10 @@ hr{
 @media (max-width: 500px) {
     .container_one{
         flex-direction: column;
+    }
+    .container_one img{
+        width: 180px;
+    height: 180px;
     }   
     .container{
         width: 300px;
