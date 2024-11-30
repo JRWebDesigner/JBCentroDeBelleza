@@ -207,7 +207,8 @@ nav>div>a{
     border-top-left-radius: 14px; border-bottom-right-radius: 14px; text-align: center;
 }
 .descNav{
-    transform:translateX(700px);
+    transform:translateX(100%);
+    display: none;
 }
 .footercel {
     background-color: #322016;
