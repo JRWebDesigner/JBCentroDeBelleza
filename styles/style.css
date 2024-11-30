@@ -27,8 +27,6 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 'DosisMedium' !important;
-    max-width: 100% !important;
-    transition: 300ms;
 }
 body{
     overflow-x: hidden !important;
