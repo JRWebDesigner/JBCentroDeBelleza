@@ -33,8 +33,14 @@ h2{
 .MisionVision{
     flex-wrap: wrap;
 }
-
+.testimonio{
+  min-width: 200px;
+  margin-top: 30px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; width: 70%; margin: auto; gap: 20px; background-color: #32201654; border-radius: 40px;
+}
 @media (min-width: 768px) { 
+  .testimonio{
+    flex-direction: row;
+  }
   .Card{
     flex-wrap: nowrap; 
   }
