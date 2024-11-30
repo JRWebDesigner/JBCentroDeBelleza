@@ -148,12 +148,15 @@
     place-items: center;
 
 }
-
+#contactotitle{
+    width: 90%;
+    margin: auto;
+}
 .form-container {
     background-color: white;
     border: 2px solid #f3b55d;
     border-radius: 15px;
-    padding: 10px;
+    padding: 30px;
     width: 60%;
     min-width: 300px;
     margin: auto;
