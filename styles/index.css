@@ -3,9 +3,9 @@
     flex-direction: column;
     flex-direction: column-reverse;
     background-color: #ffffff;
-    padding: 50px;
-    padding-top: 40vh;
+    padding:10rem 50px;
     transform: translateY(-70px);
+    border-bottom-left-radius: 100px;
     gap: 20px;
 }
 
@@ -127,21 +127,27 @@
 
 }
 .containerGallery{
-    display: flex; 
-    flex-direction: column;
+    display: flex; flex-direction: column;
 }
 .containerGallery_text{
     display: flex; 
     flex-direction: column; 
     gap: 4rem; 
-    justify-content: center; 
+    justify-content: space-between; 
     align-items: center; 
-    width: 90%;
+}
+.containerGallery_text img{
+    width: 300px;
+    margin-bottom: 20px;
 }
 .containerGallery_fotos{
     display: grid;
     place-items: center; 
+    margin-bottom: 20px;
     gap: 1.253rem;
+}
+.containerGallery_fotos img{
+    width: 300px;
 }
 .textContainerCard {
     display: grid;
@@ -154,13 +160,12 @@
 }
 .form-container {
     background-color: white;
-    border: 2px solid #f3b55d;
-    border-radius: 15px;
+    border: 5px solid #f3b55d;
+    border-radius: 40px;
     padding: 30px;
     width: 60%;
     min-width: 300px;
     margin: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -175,12 +180,14 @@
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #f3b55d;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #FED688;
-    font-size: 14px;
+    font-size: 12px;
+    border: none;
 }
-
+.form-group input{
+    height: 70px;
+}
 input::placeholder,
 textarea::placeholder {
     color: black;
@@ -201,7 +208,9 @@ textarea {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-rows: repeat(2, minmax(0, 1fr));
     }
-
+    .containerGallery_fotos img{
+        width: 320px;
+    }
     .sectionGallery_images {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-rows: repeat(2, minmax(0, 1fr));
@@ -209,11 +218,17 @@ textarea {
 }
 
 @media (min-width: 768px) {
-    .containerGallery {
-        flex-direction: row;
+    .containerGallery_text img{
+        width: 400px;
+        margin-bottom: 0;
+    }
+    .containerGallery{
+        display: grid; 
+        grid-template-columns: 1.3fr 2fr;
     }
     .containerGallery_fotos{
         grid-template-columns: repeat(2, minmax(0, 1fr)); 
+        margin-bottom: 0;
         grid-template-rows: repeat(2, minmax(0, 1fr)); 
     }
 }
