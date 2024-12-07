@@ -55,8 +55,14 @@
 small{
     color: #FED688;
 }
-span{
-    width: 100% ;
+.especialidades div{
+    width: 300px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'DosisExtraLigth';
+    font-size: 16px;
+    font-weight: 600;
 }
 hr{
     margin-bottom: 20px;

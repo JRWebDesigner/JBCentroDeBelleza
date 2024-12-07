@@ -30,7 +30,8 @@ h3{
     padding: 20px 0;
 }
 #contactotitle{
-    width: 90%;
+    min-width: 400px;
+    width: 50%;
     margin: auto;   
 }
 .redes div{
@@ -41,16 +42,14 @@ h3{
     gap: 20px;
     font-weight: 700;
 }
-
 .form-container {
     background-color: white;
-    border: 2px solid #f3b55d;
-    border-radius: 15px;
+    border: 5px solid #f3b55d;
+    border-radius: 40px;
     padding: 30px;
     width: 60%;
     min-width: 300px;
     margin: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -65,13 +64,13 @@ h3{
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #f3b55d;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #FED688;
-    font-size: 14px;
+    font-size: 12px;
+    border: none;
 }
-.maps{
-    width: 700px; margin:40px auto;
+.form-group input{
+    height: 70px;
 }
 input::placeholder,
 textarea::placeholder {
@@ -86,6 +85,11 @@ textarea {
     border-radius: 30px;
     padding: 10px;
 }
+
+.maps{
+    width: 700px; margin:40px auto;
+}
+
 .questions{
     display: flex; justify-content: center; align-items: center; gap: 20px;
     flex-wrap: wrap;

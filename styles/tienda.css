@@ -4,14 +4,14 @@
 h2,h3{
     text-align: center;
 }
-nav{
+.menuProductos{
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
 }   
-nav a{
+.menuProductos a{
     font-size: 24px;
     display: block;
     text-align: center;

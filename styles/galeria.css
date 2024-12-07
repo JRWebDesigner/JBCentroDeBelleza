@@ -6,9 +6,10 @@
     padding: 40px;
 }
 .container_galeria img{
-    max-width: 250px;
-    max-height: 300px;
+    max-width: 350px;
+    max-height: 550px;
     object-fit: cover;
+    object-position: center;
     border-radius: 30px;
 }
 .container_galeria img:hover{
