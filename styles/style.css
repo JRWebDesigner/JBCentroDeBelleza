@@ -43,7 +43,7 @@ html{
 h2{
     padding: 10px 0;
     overflow-y: hidden;
-    font-family: 'Secramento';
+    font-family: 'Secramento' !important;
     font-size: 45px !important;
     font-weight: 400 !important;
     color: #322016;
