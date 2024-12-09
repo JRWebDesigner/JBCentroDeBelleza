@@ -210,6 +210,10 @@ nav>div>a{
     transform:translateX(100%);
     display: none;
 }
+footer a{
+    color: white !important;
+
+}
 .footercel {
     background-color: #322016;
     padding: 20px;
