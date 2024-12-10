@@ -43,5 +43,9 @@ p{
         font-size: 50px;
         text-align: center;
     }
+    .links{
+        flex-direction: column;
+        gap: 70px;
+    }
 }
 
